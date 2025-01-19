@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Fonts and Stylesheets -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    /* Close Button Styles */
+    .close-btn {
+      position: absolute; /* Changed from fixed to absolute */
+      top: 120px;
+      right: 200px;
+      width: 50px;
+      height: 50px;
+      background-color: #ff3d3d;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      text-align: center;
+      font-size: 34px;
+      font-weight: bold;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .close-btn:hover {
+      background-color: #ff1a1a;
+    }
+
+    /* Title Styles */
+    .project-title {
+      position: relative; /* Changed from fixed to relative */
+      top: 100px;
+      font-size: 50px;
+      font-weight: bold;
+      color: #ffffff;
+      text-align: center;
+    }
+
+    /* Gray Box Container Styles */
+    .gray-box {
+      background-color: #2c2727;
+      padding: 20px;
+      border-radius: 10px;
+      margin: 150px auto;
+      width: fit-content;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Image Container Styles */
+    .image-container {
+      text-align: center;
+    }
+
+    .image-container img {
+      max-width: 200px; /* Set a max-width for images */
+      height: auto;
+      margin: 10px; /* Add space between images */
+      border-radius: 10px; /* Optional: Rounded corners */
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional: Shadow effect */
+      transition: transform 0.3s ease; /* Optional: Hover effect */
+    }
+
+    .image-container img:hover {
+      transform: scale(1.1);
+    }
+
+    /* Store Buttons Styles */
+    .store-container {
+      margin-top: -250px; /* Add spacing above the store buttons */
+      text-align: center;
+    }
+
+    .store-container img {
+      max-width: 50px; /* Set a max-width for store images */
+      height: auto;
+      margin: 150px; /* Add space between store buttons */
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .store-container img:hover {
+      transform: scale(1.1);
+    }
+
+    /* Line Below Store Buttons */
+	.line {
+		height: 5px;
+		margin: -80px auto 40px auto; /* Increased top margin to 60px */
+		width: 80%;
+		background: linear-gradient(to right, #6c6f6c 0%, #9ca739 50%, #73790e 100%);
+	}
+
+    /* Information Paragraph Styles */
+    .info-paragraph {
+      text-align: justify;
+      color: #ffffff;
+      font-size: 18px;
+      line-height: 1.6;
+      margin-top: 20px;
+      padding-top: 0; /* Optional, if you want to control top padding */
+      padding-bottom: 0; /* Optional, if you want to control bottom padding */
+      padding-left: 200px; /* Adjusts space on the left */
+      padding-right: 180px; /* Adjusts space on the right */
+      width: 1500px; /* Fixed width of 600px */
+    }
+
+    /* Work Header Styles */
+    .work-header {
+      color: #ffffff;
+      font-size: 24px;
+      font-weight: bold;
+	  padding-left: 160px;
+      margin-top: 30px;
+      text-align: left;
+    }
+  </style>
+</head>
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
+  <!-- Project Title -->
+  <div class="project-title">Inkmeo</div>
+
+  <!-- Close Button -->
+  <button class="close-btn" onclick="closePage()">×</button>
+
+  <!-- Gray Box with Images -->
+  <div class="gray-box">
+    <div class="image-container">
+      <img src="images/Page_1.png" alt="Page_1">
+      <img src="images/Page_2.png" alt="Page_2">
+      <img src="images/Page_3.png" alt="Page_3">
+      <img src="images/Page_4.png" alt="Page_4">
+      <img src="images/Page_5.png" alt="Page_5">
+    </div>
+  </div>
+
+  <!-- Store Buttons -->
+  <div class="store-container">
+    <a href="https://apps.apple.com/in/app/inkmeo/id1262412539" target="_blank">
+      <img src="images/AppStore.png" alt="AppStore">
+    </a>
+    <a href="https://play.google.com/store/search?q=inkmeo&c=apps&hl=en-IN" target="_blank">
+      <img src="images/PlayStore.png" alt="PlayStore">
+    </a>
+  </div>
+
+  <!-- Line Below Store Buttons -->
+  <div class="line"></div>
+
+  <!-- About game Header -->
+  <div class="work-header">About game:</div>
+
+  <!-- Information Paragraph -->
+  <div class="info-paragraph">
+    <ul>
+		<li>Children can fill in images with colors, providing a creative and engaging way to interact with the game.</li>
+		<li>The game includes audio and video elements, enhancing the experience and making it more dynamic.</li>
+		<li>Different stories from various regions are included, allowing children to explore and learn about different cultures and traditions.</li>
+		<li>The combination of color-filling, multimedia, and regional storytelling makes the game both entertaining and educational, fostering creativity and learning in children.</li>
+	</ul>
+  </div>
+
+  <!-- Work Header -->
+  <div class="work-header">My Work:</div>
+
+  <!-- Information Paragraph -->
+  <div class="info-paragraph">
+    <ul>
+		<li>Spearheaded a comprehensive overhaul of the Vuforia integration within the Inkmeo application, optimizing its performance.</li>
+		<li>Improved the Vuforia response process, enhancing data clarity and streamlining the user interface presentation for a more intuitive experience.</li>
+		<li>Seamlessly integrated new Vuforia functionalities with the existing codebase, ensuring compatibility and stability.</li>
+		<li>Elevated AR performance, resulting in a more engaging and user-friendly experience.</li>
+	</ul>
+  </div>
+
+  <!-- Tool Header -->
+  <div class="work-header">Tools:</div>
+
+  <!-- Information Paragraph -->
+  <div class="info-paragraph">
+    <p>(Unity AR), Libraries:(Unity-Vuforia, Json), Language:(C#)</p>
+  </div>
+
+  <script>
+    // Function to redirect to the specified URL when close button is clicked
+    function closePage() {
+      window.location.href = "file:///E:/Portfolio/Portfolio-Website-Template/index.html#"; // Redirects to the specified URL
+    }
+  </script>
+
+</body>
+</html>
